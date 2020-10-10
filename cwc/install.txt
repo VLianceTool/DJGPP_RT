@@ -1,0 +1,2 @@
+From https://github.com/andrewwutw/build-djgpp/releases
+//DJGPP for MinGW (Standalone version. MinGW DLL files are included, can run without installing MinGW)

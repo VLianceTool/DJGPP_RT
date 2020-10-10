@@ -1,0 +1,64 @@
+﻿<Toolchain> <!-- LibRT Cwc Config (Mingw) -->
+
+<Config>
+	<Platform name="Windows" default="true"></Platform>
+
+	<Type name="C">   <Extention>c</Extention>              </Type>
+	<Type name="C++"> <Extention>c++,cc,cpp,cxx</Extention> </Type>
+	 <!-- <Type name="C~">  <Extention>cw</Extention>             </Type>-->
+	 
+	<BinExt>exe</BinExt>
+	  
+</Config>
+
+
+<Exe>
+
+    <Compiler type="C">bin/i586-pc-msdosdjgpp-gcc.exe -std=gnu99 </Compiler> <!-- std=c99 -->
+	
+    <Compiler>bin/i586-pc-msdosdjgpp-g++.exe</Compiler>
+	<Linker>bin/i586-pc-msdosdjgpp-g++.exe</Linker>
+    <Linker_Static>bin/i586-pc-msdosdjgpp-ar.exe</Linker_Static>
+    <Linker_Dynamic>bin/i586-pc-msdosdjgpp-g++.exe</Linker_Dynamic>
+	
+	
+	<Debugger>gdb/gdb_32.exe</Debugger>
+	<Sanitizer>DrMemory/bin/drmemory.exe</Sanitizer>
+	
+	
+	<gcc>bin/i586-pc-msdosdjgpp-gcc.exe</gcc>
+	<ld>bin/i586-pc-msdosdjgpp-ld.exe</ld>
+	<objcopy>bin/objcopy.exe</objcopy>
+	<objdump>bin/i586-pc-msdosdjgpp-objcopy.exe</objdump>
+
+	<as>bin/i586-pc-msdosdjgpp-as.exe</as>
+	
+</Exe>
+
+<Arguments>
+
+	<Compiler>-I"{_pModule}include/" </Compiler>
+	<Compiler>-I"{_pModule}i586-pc-msdosdjgpp/sys-include/" </Compiler>
+
+	<CompilerLinker>-I"{_pProject}" </CompilerLinker>
+	
+	<Compiler>-MD </Compiler>
+	<Linker>-I"{_pProject}" </Linker>
+
+	<Linker>-Wno-unused-value -Wno-deprecated-register -Wno-ignored-attributes -Wno-expansion-to-defined -Wno-ignored-pragmas </Linker>	
+  
+	<Linker>-Werror=return-type </Linker>
+	
+	<Linker>-static-libgcc -static-libstdc++ </Linker>
+	<Linker_Static>rcs </Linker_Static>
+	<Linker_Dynamic>-shared </Linker_Dynamic>
+
+	<Debug>-g</Debug>
+	<O2>-O2 -DNDEBUG -s -ffunction-sections -fdata-sections -Wl,--gc-sections</O2>
+	<O3>-O3 -DNDEBUG -s -ffunction-sections -fdata-sections -Wl,--gc-sections</O3>
+	<OS>-Os -DNDEBUG -s -ffunction-sections -fdata-sections -Wl,--gc-sections</OS>
+   
+</Arguments>
+  
+</Toolchain> <!-- End -->
+
