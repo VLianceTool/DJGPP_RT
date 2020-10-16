@@ -1,0 +1,11 @@
+//Toolchain creation:
+From https://github.com/andrewwutw/build-djgpp/releases
+v10.2.0
+//DJGPP for MinGW (Standalone version. MinGW DLL files are included, can run without installing MinGW)
+
+//remove read( & co from __STRICT_ANSI__ (required to build LLVM)
+"sys-include/unistd.h"
+&
+"sys-include/sys/types.h"
+
+remove sys-include from i586-pc-msdosdjgpp.7z.-ex (to have src versioning)

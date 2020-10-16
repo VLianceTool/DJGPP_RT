@@ -1,10 +1,7 @@
-
-# File type to ignore 
 _cache/
 _old/
 bin/
 zips/
-lib/
 
 Emsc.cfg
 
@@ -18,5 +15,5 @@ DrMemory/
 gdb/
 libexec/
 share/
-lib/
-i586-pc-msdosdjgpp/
+i586-pc-msdosdjgpp/bin/
+i586-pc-msdosdjgpp/lib/
