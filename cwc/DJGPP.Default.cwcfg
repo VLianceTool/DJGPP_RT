@@ -32,8 +32,8 @@
 	<objdump>bin/i586-pc-msdosdjgpp-objcopy.exe</objdump>
 
 	<as>bin/i586-pc-msdosdjgpp-as.exe</as>
-	<fbc_dos>FreeBASIC[dos]/fbc.exe -target dos</fbc_dos>
-	<fbc>FreeBASIC/fbc.exe -target dos</fbc>
+	<fbc_dos>FreeBASIC/fbc.exe -target dos</fbc_dos>
+	<fbc>FreeBASIC/fbc.exe</fbc>
 	
 </Exe>
 
