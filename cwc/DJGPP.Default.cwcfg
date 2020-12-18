@@ -41,6 +41,8 @@
 
 	<Compiler>-I"{_pModule}include/" </Compiler>
 	<Compiler>-I"{_pModule}i586-pc-msdosdjgpp/sys-include/" </Compiler>
+	<Compiler>-I"{_pModule}lib/gcc/i586-pc-msdosdjgpp/10.2.0/include/c++/" </Compiler>
+	<Compiler>-I"{_pModule}lib/gcc/i586-pc-msdosdjgpp/10.2.0/include/c++/i586-pc-msdosdjgpp/" </Compiler>
 
 	<CompilerLinker>-I"{_pProject}" </CompilerLinker>
 	
