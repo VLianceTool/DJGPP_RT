@@ -2,6 +2,8 @@
 
 Create Dos compatible application, run it on DosBox or develop an homemade OS
 
+Based on [DJGPP](http://www.delorie.com/djgpp/) and [FreeBASIC](https://www.freebasic.net/)
+
 ***
 
 Here is a revelant Open Source project using this Toolchain:
