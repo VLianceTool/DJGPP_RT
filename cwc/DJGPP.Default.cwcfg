@@ -1,7 +1,7 @@
 ﻿<Toolchain> <!-- LibRT Cwc Config (Mingw) -->
 
 <Config>
-	<Platform name="Windows" default="true"></Platform>
+	<Platform name="DOS" default="true"></Platform>
 
 	<Type name="C">   <Extention>c</Extention>              </Type>
 	<Type name="C++"> <Extention>c++,cc,cpp,cxx</Extention> </Type>
