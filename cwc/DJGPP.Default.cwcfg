@@ -1,5 +1,5 @@
-﻿<Toolchain> <!-- LibRT Cwc Config (Mingw) -->
-
+﻿<Toolchain> 
+ 
 <Config>
 	<Platform name="DOS" default="true"></Platform>
 
